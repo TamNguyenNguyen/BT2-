@@ -2,5 +2,14 @@ var a = [1, 2];
 var b = [1, 2];
 console.log(a === b);
 // Chạy chương trình và tìm hiểu vì sao kết quả lại là false mặc dù giá trị của 2 array có vẻ giống nhau. Viết câu trả lời ở dưới đây.
+  BT1: 
 Trong Javascript, Chuối (string) hoặc số (number) khi so sánh thì sẽ so sánh với giá trị của chúng, trong khi các đối tượng khác như mảng (array), ngày tháng (date) và object thuần sẽ được so sánh qua tham chiếu. Việc so sánh bằng tham chiếu về cơ bản sẽ kiểm tra xem các đối tượng có được tham chiếu đến cùng một vị trí trong bộ nhớ hay không.
 ngoài ra, khi so sánh đúng 2 Array cần kiểm tra từng phần tử trong Array 
+  BT2: 
+Tương tự với Array, khi so sánh 2 Objects ta cũng cần kiểm tra từng properties trong Object, so sánh chúng với nhau 
+var a = '1000';
+var b = '200';
+  BT3:
+console.log(a > b);
+// Chạy chương trình và tìm hiểu vì sao kết quả lại là false mặc dù 1000 trông có vẻ lớn hơn 200. Viết câu trả lời ở dưới đây.
+Kết quả là false vì a và b được khai báo ở dạng chuỗi, nên khi so sánh > trả kết quả false
